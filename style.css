@@ -87,7 +87,25 @@ section { padding: 100px 0; position: relative; overflow: hidden; background-col
 .hero-content { position: relative; z-index: 2; max-width: 750px; padding: 0 20px; display: flex; flex-direction: column; align-items: center; gap: 2.5rem; }
 .hero-content h1 { font-size: 3.2rem; margin: 0; }
 .hero-content .lead { font-size: 1.15rem; margin: 0; }
-.services-features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 1rem 2rem; max-width: 1100px; margin: 4rem auto 0; }
+/* СТАЛО */
+.services-features-wrapper {
+    max-width: 1100px; 
+    margin: 4rem auto 0;
+}
+
+.services-grid-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 2rem;
+}
+
+.services-grid-extra {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 2rem;
+    max-width: 66%; /* Заставляет блок из 2-х элементов быть шириной как 2/3 от родителя */
+    margin: 2rem auto 0; /* Отступ сверху и центрирование */
+}
 .feature-item { display: flex; align-items: flex-start; gap: 1rem; padding: 0.5rem 0; }
 .feature-item svg { width: 24px; height: 24px; stroke: var(--accent-green); stroke-width: 2.5; flex-shrink: 0; margin-top: 4px; }
 .feature-item span { font-size: 1.05rem; color: var(--text-dark); line-height: 1.6; }
