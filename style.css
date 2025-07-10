@@ -215,7 +215,7 @@ section { padding: 100px 0; position: relative; overflow: hidden; background-col
         flex-direction: row-reverse;
     }
     .header-left .header-tagline { font-size: 0.8rem; }
-    .header-left .header-separator { margin: 0 0.75rem; }
+    .header-left .header-separator { margin: 0rem; }
 
     .nav-links {
         position: fixed;
