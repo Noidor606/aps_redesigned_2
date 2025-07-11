@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             canvas.width = rect.width * dpr;
             canvas.height = rect.height * dpr;
             ctx.scale(dpr, dpr);
-            ctx.globalAlpha = 0.072;
+            ctx.globalAlpha = 0.075;
             ctx.filter = 'grayscale(1) brightness(1.5) contrast(0.5)';
             ctx.clearRect(0, 0, rect.width, rect.height);
             const cellSize = 55;

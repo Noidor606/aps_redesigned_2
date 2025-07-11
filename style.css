@@ -313,7 +313,14 @@ section { padding: 100px 0; position: relative; overflow: hidden; background-col
     .showcase-text h3 { font-size: 1.8rem; }
     .showcase-text p { font-size: 1rem; }
     .showcase-visual { height: 300px; }
-    .services-features-grid, .process-grid, .gallery-grid { grid-template-columns: 1fr; }
+    /* СТАЛО */
+    .services-grid-main, .services-grid-extra, .process-grid, .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    /* ДОБАВЬ ЭТОТ БЛОК */
+    .services-grid-extra {
+        max-width: none; /* Убираем ограничение ширины на мобилках */
+    }
     .gallery-grid { gap: 1rem; }
     .process-card { padding: 2rem 1.5rem; }
     .pricing-cta-block { padding: 2.5rem 1.5rem; }
@@ -337,4 +344,9 @@ section { padding: 100px 0; position: relative; overflow: hidden; background-col
     .hero-content .lead { font-size: 1rem; }
     .showcase-main-title { font-size: 2rem; }
     .showcase-text h3 { font-size: 1.6rem; }
+}
+
+
+.tech-card .partner-logo:first-child img {
+    transform: translateY(-5px);
 }
