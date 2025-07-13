@@ -82,7 +82,7 @@ section { padding: 100px 0; position: relative; } /* Убрал overflow отс�
 #dynamic-canvas-background { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; display: block; }
 .hero-section { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background-image: url('1block_img.png'); background-size: cover; background-position: center; position: relative; }
 .hero-section::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1; }
-.hero-content { position: relative; z-index: 2; max-width: 750px; padding: 0 20px; display: flex; flex-direction: column; align-items: center; gap: 2.5rem; }
+.hero-content { position: relative; z-index: 2; max-width: 750px; padding: 0 20px; display: flex; flex-direction: column; align-items: center; gap: 2.5rem; filter: drop-shadow(0 4px 30px rgb(0, 0, 0, 80)); }
 .hero-content h1 { font-size: 3.2rem; margin: 0; }
 .hero-content .lead { font-size: 1.15rem; margin: 0; }
 
@@ -321,6 +321,12 @@ section { padding: 100px 0; position: relative; } /* Убрал overflow отс�
     .modal-subtitle { font-size: 0.95rem; margin-bottom: 1.5rem; }
     .form-actions { flex-direction: column-reverse; gap: 0.8rem; }
     .btn-submit, .btn-cancel { width: 100%; text-align: center; }
+        /*
+    НОВЫЙ ФОН ДЛЯ ГЛАВНОГО ЭКРАНА НА МОБИЛКЕ
+    */
+    .hero-section {
+        background-image: url('1block_img_mob.png');
+    }
 }
 
 @media (max-width: 480px) {
